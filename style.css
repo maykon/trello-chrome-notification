@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  width: 400px;
+  overflow-x: hidden;
+}
+
+#bdOptions {
+  overflow: hidden;
+}
+
+#container header {
+  background: #333;
+  padding: 20px;
+}
+
+#container header h1 {
+  color: #fff;
+  text-align: center;
+}
+
+#content {
+  max-height: 90%;
+  overflow-y: auto;
+}
+
+#dvVersions {
+  margin: 20px 30px;
+}
+
+#dvVersions h1 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#dvVersions ul li {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 7px 0px;
+  text-align: justify;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  border: 1px solid #ddd;
+}
+
+ul li {
+  padding: 8px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+#options {
+  margin: 5px;
+  margin-top: 0px;
+  overflow: hidden;
+}
+
+#options fieldset {
+  padding: 10px;
+}
+
+#options label {
+  display: block;
+  margin: 5px 0px;
+}
+
+#options input[type="email"] {
+  display: block;
+  width: 100%;
+  padding: 3px;
+}
+
+#stBar {
+  margin: 5px 0px;
+}
+
+button {
+  padding: 5px;
+}
+
+.msgError {
+  color: red;
+}

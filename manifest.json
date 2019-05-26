@@ -1,0 +1,40 @@
+{
+    "name": "Versões SG5",
+    "version": "1.0",
+    "description": "Realiza a notificação ao alterar versões agendadas do SG5.",
+    "permissions": [
+        "activeTab",
+        "declarativeContent",
+        "storage",
+        "notifications",
+        "tabs"
+    ],
+    "content_security_policy": "script-src 'self'; object-src 'self'",
+    "background": {
+        "scripts": [
+            "socket.io.slim.js",
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "page_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/icon_16.png",
+            "32": "images/icon_32.png",
+            "48": "images/icon_48.png",
+            "128": "images/icon_128.png"
+        }
+    },
+    "icons": {
+        "16": "images/icon_16.png",
+        "32": "images/icon_32.png",
+        "48": "images/icon_48.png",
+        "128": "images/icon_128.png"
+    },
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": false
+    },
+    "manifest_version": 2
+}

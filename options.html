@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Opções - Versões SG5</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body id="bdOptions">
+    <div id="options">
+      <fieldset>
+        <legend>&nbsp;Configurações&nbsp;</legend>
+        <label for="name">
+          Nome
+          <input type="text" id="name" />
+        </label>
+
+        <label for="email">
+          E-mail
+          <input type="email" id="email" />
+        </label>
+
+        <label for="showEmail">
+          <input type="checkbox" id="showEmail" />
+          Receber e-mail
+        </label>
+
+        <label for="showNotification">
+          <input type="checkbox" id="showNotification" />
+          Receber notificações
+        </label>
+
+        <div id="stBar"><span id="status"></span>&nbsp;</div>
+        <button id="save">Salvar</button>
+        <button id="reset">Limpar</button>
+      </fieldset>
+    </div>
+
+    <script src="options.js"></script>
+  </body>
+</html>
