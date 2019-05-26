@@ -68,6 +68,9 @@ const validateShowNotification = data => {
 };
 
 const showNotificationVersion = versions => {
+  if (!versions) return;
+  if (!versions.length) return;
+
   let options = {
     type: "list",
     title: "Versões SG5",

@@ -1,6 +1,6 @@
 {
     "name": "Versões SG5",
-    "version": "1.0",
+    "version": "1.0.1",
     "description": "Realiza a notificação ao alterar versões agendadas do SG5.",
     "permissions": [
         "activeTab",

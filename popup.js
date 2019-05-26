@@ -1,10 +1,17 @@
+const changeEmptyVersion = (msg = "") => {
+  document.getElementById("status").innerHTML = msg;
+};
+
 const insertVersions = data => {
+  changeEmptyVersion("<h1>Nenhuma versão agendada até o momento.</h1>");
   if (!data) return;
-  if (!data.lenght) return;
-  let versions = "";
+  if (!data.length) return;
+  changeEmptyVersion();
+  let versions = "<ul>";
   data.forEach(version => {
     versions += `<li id="${version.id}">${version.text}</li>`;
   });
+  versions += "</ul>";
   changeVersionContent(versions);
 };
 
