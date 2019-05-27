@@ -1,6 +1,6 @@
 {
     "name": "Versões SG5",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Realiza a notificação ao alterar versões agendadas do SG5.",
     "permissions": [
         "activeTab",
@@ -20,10 +20,10 @@
     "page_action": {
         "default_popup": "popup.html",
         "default_icon": {
-            "16": "images/icon_16.png",
-            "32": "images/icon_32.png",
-            "48": "images/icon_48.png",
-            "128": "images/icon_128.png"
+            "16": "images/iconw_16.png",
+            "32": "images/iconw_32.png",
+            "48": "images/iconw_48.png",
+            "128": "images/iconw_128.png"
         }
     },
     "icons": {
