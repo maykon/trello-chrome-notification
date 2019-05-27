@@ -96,3 +96,15 @@ const onNotificationClick = () => {
 };
 
 chrome.notifications.onClicked.addListener(onNotificationClick);
+
+const onPingServer = alarm => {
+  if (alarm.name !== "VersionsSG5") return;
+  fetch("https://versions-sg5.herokuapp.com/health").then(response => {
+    response.json().then(data => {
+      chrome.storage.sync.set({ health: data });
+    });
+  });
+};
+
+chrome.alarms.onAlarm.addListener(onPingServer);
+chrome.alarms.create("VersionsSG5", { periodInMinutes: 30 });
